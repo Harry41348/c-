@@ -54,6 +54,41 @@ void task3() {
     std::cout << "Total: " << checkout;
 }
 
+void task4() {
+    int a, b;
+    char op;
+    std::cout << "Number 1: ";
+    std::cin >> a;
+    std::cout << "Operator: ";
+    std::cin >> op;
+    std::cout << "Number 2: ";
+    std::cin >> b;
+    switch (op) {
+    case '+':
+        std::cout << "Result: " << a + b;
+        break;
+    case '-':
+        std::cout << "Result: " << a - b;
+        break;
+    case '/':
+        std::cout << "Result: " << a / b;
+        break;
+    case '*':
+        std::cout << "Result: " << a * b;
+        break;
+    default:
+        std::cout << "Operator choices: + - * /";
+    }
+}
+
+void task5() {
+    
+}
+
+void task6(){
+    
+}
+
 int main()
 {
     int program;
@@ -71,6 +106,15 @@ int main()
         break;
     case 4:
         task3();
+        break;
+    case 5:
+        task4();
+        break;
+    case 6:
+        task5();
+        break;
+    case 7:
+        task6();
         break;
     default:
         std::cout << "Must be a number from the following: 1, 2";
