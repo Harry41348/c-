@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include "math.h";
 using namespace std; // Bad practice
 
 int main()
@@ -13,7 +14,9 @@ int main()
     cout << "What is your second number? ";
     std::cin >> b;
     cout << "Thanks!\n";
-    cout << "Your numbers are " << a << " and " << b;
+    cout << add(a, b) << "\n";
+    cout << multiply(a, b) << "\n";
+    cout << divide(a, b) << "\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
