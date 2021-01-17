@@ -1,6 +1,2 @@
 ﻿  TutorialOne.cpp
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialOne\TutorialOne\TutorialOne.cpp(5,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  math.cpp
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialOne\TutorialOne\math.cpp(12,11): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-  Generating Code...
   TutorialOne.vcxproj -> C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialOne\Debug\TutorialOne.exe
