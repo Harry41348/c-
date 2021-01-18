@@ -99,7 +99,46 @@ void task5() {
 }
 
 void task6(){
-    
+    int code, wage, hours, pay, sales;
+    std::cout << "Input pay code, choice - 1(Manager), 2(Hourly worker), 3(Commision worker), 4(Pieceworker): ";
+    std::cin >> code;
+    switch (code) {
+    case 1:
+        std::cout << "Managers wage: ";
+        std::cin >> wage;
+        if (wage >= 5000) {
+            wage /= 52;
+        }
+        std::cout << "Weekly wage: " << wage;
+        break;
+    case 2:
+        std::cout << "Workers hourly wage: ";
+        std::cin >> wage;
+        std::cout << "Hours worked: ";
+        std::cin >> hours;
+        if (hours <= 40) {
+            pay = hours * wage;
+        }
+        else {
+            pay = (wage * 40) + ((wage * 1.5) * (hours - 40));
+        }
+        std::cout << "Weekly wage: " << pay;
+        break;
+    case 3:
+        std::cout << "Gross weekly sales: ";
+        std::cin >> sales;
+        pay = 250 + (sales * 0.057);
+        std::cout << "Weekly wage: " << pay;
+        break;
+    case 4:
+        int items;
+        std::cout << "Items produces: ";
+        std::cin >> items;
+        std::cout << "Wage: " << items * 1.5;
+        break;
+    default:
+        std::cout << "Error: Code must be 1, 2, 3 or 4";
+    }
 }
 
 int main()
