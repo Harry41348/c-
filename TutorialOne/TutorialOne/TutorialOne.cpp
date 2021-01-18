@@ -82,7 +82,20 @@ void task4() {
 }
 
 void task5() {
-    
+    int size = 0;
+    std::cout << "Input bar chart value. Negative number to stop program: ";
+    while (size >= 0) {
+        std::cin >> size;
+        if (size < 0) { break; }
+        else if (size < 20) {
+            for (int i = 0; i < size; i++) {
+                std::cout << '*';
+            }
+        }
+        else {
+            std::cout << "Value must be less than 20";
+        }
+    }
 }
 
 void task6(){
