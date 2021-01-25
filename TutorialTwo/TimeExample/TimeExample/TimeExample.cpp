@@ -3,6 +3,7 @@
 
 #include "pch.h"
 #include "Time.h"
+#include<Windows.h>
 
 using namespace std;
 
@@ -14,6 +15,12 @@ int main()
 	t.setTime(13, 25, 12); //set the time
 	cout << "\nThe set time is ";
 	t.printTime();
+	for (int i = 0; i < 10; i++) {
+		cout << "\n";
+		t.tckTime();
+		t.printTime();
+		Sleep(1000);
+	}
 	return 0;
 }
 
