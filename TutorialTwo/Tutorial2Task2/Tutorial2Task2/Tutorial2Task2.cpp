@@ -6,8 +6,21 @@
 
 int main()
 {
+    double amount = 0;
+    int years = 0;
+    float interest = 0;
     Account harry = Account("Harry", 120);
-    std::cout << "Balance: " << harry.getBalance();
+    std::cout << "Balance: " << harry.getBalance() << "\nEnter amount to withdraw: ";
+    std::cin >> amount;
+    harry.withdraw(amount);
+    std::cout << "Balance: " << harry.getBalance() << "\nEnter amount to credit into account: ";
+    std::cin >> amount;
+    harry.addCredit(amount);
+    std::cout << "Balance: " << harry.getBalance() << "\nEnter interest followed by years: ";
+    std::cin >> interest >> years;
+    harry.simulateInterest(interest, years);
+    std::cout << "Balance after simulation: " << harry.getBalance();
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

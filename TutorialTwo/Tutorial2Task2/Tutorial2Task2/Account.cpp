@@ -22,3 +22,13 @@ void Account::withdraw(double amount) {
 double Account::getBalance() {
 	return balance;
 }
+
+void Account::simulateInterest(float interest, int years) {
+	if (years != 0) {
+		balance *= interest;
+		this->simulateInterest(interest, years - 1);
+	}
+	else {
+		std::cout << "Balance is now: " << balance;
+	}
+}
