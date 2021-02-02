@@ -1,0 +1,3 @@
+﻿  FunctionPointer.cpp
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialTwo\FunctionPointer\FunctionPointer\FunctionPointer.cpp(17,14): error C2440: '=': cannot convert from 'int' to 'int *'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialTwo\FunctionPointer\FunctionPointer\FunctionPointer.cpp(17,11): message : Conversion from integral type to pointer type requires reinterpret_cast, C-style cast or function-style cast

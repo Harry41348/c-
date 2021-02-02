@@ -1,0 +1,4 @@
+﻿  AbstractEmployeeProj.cpp
+c:\users\scommv\source\repos\abstractemployeeproj\abstractemployeeproj\abstractemployeeproj.cpp(55): warning C4018: '<': signed/unsigned mismatch
+c:\users\scommv\source\repos\abstractemployeeproj\abstractemployeeproj\abstractemployeeproj.cpp(62): warning C4018: '<': signed/unsigned mismatch
+  AbstractEmployeeProj.vcxproj -> c:\users\scommv\source\repos\AbstractEmployeeProj\Debug\AbstractEmployeeProj.exe
