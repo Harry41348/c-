@@ -1,5 +1,35 @@
 ﻿  Account.cpp
-  Bank.cpp
+  Main.cpp
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,12): error C2259: 'Account': cannot instantiate abstract class
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(7): message : see declaration of 'Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,12): message : due to following members:
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,12): message : 'double Account::getBalance(void)': is abstract
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(22): message : see declaration of 'Account::getBalance'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,12): message : 'void Account::printDetails(void)': is abstract
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(23): message : see declaration of 'Account::printDetails'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,16): error C2259: 'Account': cannot instantiate abstract class
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(7): message : see declaration of 'Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,16): message : due to following members:
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,16): message : 'double Account::getBalance(void)': is abstract
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(22): message : see declaration of 'Account::getBalance'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,16): message : 'void Account::printDetails(void)': is abstract
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(23): message : see declaration of 'Account::printDetails'
+  CurrentAccount.cpp
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\CurrentAccount.cpp(14,55): error C3867: 'Account::getAccNo': non-standard syntax; use '&' to create a pointer to member
+  Date.cpp
   Person.cpp
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,16): error C2259: 'Account': cannot instantiate abstract class
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(7): message : see declaration of 'Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,16): message : due to following members:
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,16): message : 'double Account::getBalance(void)': is abstract
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(22): message : see declaration of 'Account::getBalance'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,16): message : 'void Account::printDetails(void)': is abstract
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(23): message : see declaration of 'Account::printDetails'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,28): error C2259: 'Account': cannot instantiate abstract class
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(7): message : see declaration of 'Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,28): message : due to following members:
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,28): message : 'double Account::getBalance(void)': is abstract
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(22): message : see declaration of 'Account::getBalance'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,28): message : 'void Account::printDetails(void)': is abstract
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(23): message : see declaration of 'Account::printDetails'
   Generating Code...
-  Bank.vcxproj -> C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Debug\Bank.exe
