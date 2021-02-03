@@ -24,8 +24,10 @@ Account::Account(int accNo, double bal) {
 bool Account::deposit(double in) {
 	if (in > 0) {
 		this->balance += in;
+		std::cout << "Succesfully deposited £" << in << "into the account." << std::endl;
 		return true;
 	}
+	std::cout << "The amount to deposit must be a positive amount." << std::endl;
 	return false;
 }
 

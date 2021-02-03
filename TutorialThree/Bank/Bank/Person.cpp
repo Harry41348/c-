@@ -35,41 +35,46 @@ bool Person::closeAccount(int accountNumber) {
 			return true;
 		}
 	}
-	return false;
+	return unableToLocateAccount(accountNumber);
 }
 
-bool Person::creditMoney(int* accNum, double* credit) {
-	for (size_t i = 0; i < accounts.size(); i++) {
-		if (accounts.at(i).getAccNo() == *accNum) {
-			return accounts.at(i).credit(credit);
+bool Person::depositMoney(int accountNumber, double amount) {
+	for (std::vector<Account*>::iterator it = this->accounts.begin(); it != this->accounts.end(); ++it) {
+		if ((*it)->getAccountNumber == accountNumber) {
+			return (*it)->deposit(amount);
 		}
 	}
-	return false;
+	return unableToLocateAccount(accountNumber);
 }
 
-bool Person::debitMoney(int* accNum, double* credit) {
-	for (size_t i = 0; i < accounts.size(); i++) {
-		if (accounts.at(i).getAccNo() == *accNum) {
-			return accounts.at(i).withdraw(credit);
+bool Person::withdrawMoney(int accountNumber, double amount) {
+	for (std::vector<Account*>::iterator it = this->accounts.begin(); it != this->accounts.end(); ++it) {
+		if ((*it)->getAccountNumber == accountNumber) {
+			return (*it)->withdraw(amount);
 		}
 	}
-	return false;
+	return unableToLocateAccount(accountNumber);
 }
 
 //Getters
-std::string Person::getName() {
+std::string Person::getName() const {
 	return this->name;
 }
 
 void Person::printAllAccounts() {
-	if (accounts.size() > 0) {
-		for (size_t i = 0; i < accounts.size(); i++) {
-			std::cout << accounts.at(i).getDetails() << std::endl;
+	if (accounts.size > 0) {
+		for (std::vector<Account*>::iterator it = this->accounts.begin(); it != this->accounts.end(); ++it) {
+			std::cout << (*it)->getDetails << std::endl;
 		}
-	}
-	else {
+	} else {
 		std::cout << "Person: " << name << " has no accounts" << std::endl;
 	}
+}
+
+//Functions
+bool Person::unableToLocateAccount(int accountNumber) {
+	std::cout << "Unable to locate the account " << accountNumber << ".\n";
+	return false;
 }
 
 //Deconstructor

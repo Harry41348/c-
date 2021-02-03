@@ -13,11 +13,13 @@ public:
 	//Setters
 	bool addCurrentAccount(int, double);
 	bool closeAccount(int);
-	bool creditMoney(int, double);
-	bool debitMoney(int, double);
+	bool depositMoney(int, double);
+	bool withdrawMoney(int, double);
 	//Getters
 	void printAllAccounts();
 	std::string getName() const;
+
+	bool unableToLocateAccount(int);
 	virtual ~Person();
 private:
 	const std::string name;

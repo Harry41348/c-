@@ -26,10 +26,10 @@ bool Bank::newCurrentAccount(std::string name, int accountNumber, double balance
 	return false;
 }
 
-bool Bank::closeAccount(int *acc, std::string name) {
+bool Bank::closeAccount(int accountNumber, std::string name) {
 	for (Person person : accountHolders) {
 		if (person.getName == name) {
-			person.closeAccount(acc);
+			person.closeAccount(accountNumber);
 			return true;
 		}
 	}

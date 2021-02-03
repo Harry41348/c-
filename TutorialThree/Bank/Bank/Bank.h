@@ -8,7 +8,7 @@ public:
 	//Setters
 	bool registerPerson(std::string);
 	bool newCurrentAccount(std::string, int, double);
-	bool closeAccount(int*, std::string);
+	bool closeAccount(int, std::string);
 	bool depositMoney();
 	bool withdrawMoney();
 	//Getters
