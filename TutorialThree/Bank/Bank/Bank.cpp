@@ -2,7 +2,7 @@
 #include "Account.h"
 
 Bank::Bank(std::string bankName) :name(bankName){
-
+	
 }
 
 bool Bank::registerPerson(std::string personsName) {
@@ -14,8 +14,21 @@ bool Bank::registerPerson(std::string personsName) {
 	}
 	Person newPerson = Person(personsName);
 	accountHolders.push_back(newPerson);
-	std::cout << personsName << " has been succesfully added to the bank" << std::endl;
+	++personCount;
+	std::cout << personsName << " has been successfully added to the bank" << std::endl;
 	return true;
+}
+
+bool Bank::removePerson(std::string personsName) {
+	for (size_t i = 0; i < accountHolders.size(); i++) {
+		if (accountHolders.at(i).getName() == personsName) {
+			accountHolders.erase(accountHolders.begin() + i);
+			std::cout << "Account holder \"" << personsName << "\" successfully removed from the bank." << std::endl;
+			return true;
+		}
+	}
+	unableToFindAccountHolder(personsName);
+	return false;
 }
 
 //Setters
@@ -25,7 +38,8 @@ bool Bank::newCurrentAccount(std::string name, int accountNumber, double balance
 			return person.addCurrentAccount(accountNumber, balance);
 		}
 	}
-	return unableToFindAccountHolder(name);
+	unableToFindAccountHolder(name);
+	return false;
 }
 
 bool Bank::closeAccount(std::string name, int accountNumber) {
@@ -76,6 +90,10 @@ void Bank::checkAccounts(std::string name) {
 		}
 	}
 	unableToFindAccountHolder(name);
+}
+
+int Bank::getTotalPeople() {
+	return personCount;
 }
 
 void Bank::unableToFindAccountHolder(std::string name) {

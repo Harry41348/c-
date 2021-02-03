@@ -77,7 +77,7 @@ double Person::checkBalance(int accountNumber) {
 void Person::printAllAccounts() {
 	if (accounts.size > 0) {
 		for (std::vector<Account*>::iterator it = this->accounts.begin(); it != this->accounts.end(); ++it) {
-			std::cout << (*it)->getDetails << std::endl;
+			std::cout << (*it)->printDetails << std::endl;
 		}
 	} else {
 		std::cout << "Person: " << name << " has no accounts" << std::endl;

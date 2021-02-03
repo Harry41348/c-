@@ -6,10 +6,10 @@ CurrentAccount::CurrentAccount(int accNo, double bal)
 }
 
 double CurrentAccount::getBalance() {
-	return Account::getBal();
+	return Account::getBalance();
 }
 
 void CurrentAccount::printDetails() {
-	std::cout << "Account number: " << Account::getAccNo <<
+	std::cout << "Account number: " << Account::getAccountNumber() <<
 		"\nBalance: " << getBalance() << std::endl;
 }
