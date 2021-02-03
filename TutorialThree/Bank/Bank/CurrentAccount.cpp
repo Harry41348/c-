@@ -1,9 +1,8 @@
 #include "CurrentAccount.h"
 #include "Account.h"
 
-CurrentAccount::CurrentAccount(int* accNo, double* bal)
+CurrentAccount::CurrentAccount(int accNo, double bal)
 	: Account(accNo, bal){
-
 }
 
 double CurrentAccount::getBalance() {

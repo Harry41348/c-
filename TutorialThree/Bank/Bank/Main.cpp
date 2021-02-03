@@ -3,7 +3,8 @@
 
 #include <iostream>
 #include "Person.h"
-#include "Account.h"
+#include "CurrentAccount.h"
+#include "Bank.h"
 
 int main()
 {
@@ -17,13 +18,15 @@ int main()
 
 	std::cout << "Use the following options to control this program" << std::endl;
 	std::cout << "type -1 to exit" << std::endl;
-	std::cout << "type 1 to Open Account" << std::endl;
-	std::cout << "type 2 to Close Account" << std::endl;
-	std::cout << "type 3 to Credit money to an Account" << std::endl;
-	std::cout << "type 4 to Debit money from an Account" << std::endl;
-	std::cout << "type 5 to Print out the information of all the accounts" << std::endl;
+	std::cout << "type 1 to Add Person to the Bank" << std::endl;
+	std::cout << "type 2 to Open Current Account" << std::endl;
+	std::cout << "type 3 to Close Account" << std::endl;
+	std::cout << "type 4 to Credit money to an Account" << std::endl;
+	std::cout << "type 5 to Debit money from an Account" << std::endl;
+	std::cout << "type 6 to Print out the information of all the accounts" << std::endl;
+	
 	//initialise a Person object.
-	Person person1("Harry");
+	Bank harryBank("Bank");
 
 	while (command != -1)
 	{
@@ -32,67 +35,48 @@ int main()
 
 		switch (command)
 		{
-		case (1): //Open a new account
+		case (1): // Add Person to Bank
 		{
+			std::string name;
+			std::cout << "Input the name of the account holder (e.g Harry)" << std::endl;
+			std::cin >> name;
+			//Register the new person
+			harryBank.registerPerson(name);
+		}
+		case (2): //Open a new account
+		{
+			std::string name;
 			int accountNo;
 			double startingBalance;
-			std::cout << "Input an account number followed by the starting balance. (e.g 1234  50.00)" << std::endl;
-			std::cin >> accountNo >> startingBalance;
+			std::cout << "Input the person, then an account number followed by the starting balance. (e.g harry 1234  50.00)" << std::endl;
+			std::cin >> name >> accountNo >> startingBalance;
 			//Now create a new Account object
-			Account acc1(&accountNo, &startingBalance);
+			CurrentAccount acc(&accountNo, &startingBalance);
 			//Add the account to the person's account vector
-			person1.addAccount(acc1);
-			std::cout << "Account : " << accountNo << " has been successfully created with a balance of : " << startingBalance << std::endl;
+			if (harryBank.newAccount(acc, name)) {
+				std::cout << "Account : " << accountNo << " has been successfully created with a balance of : " << startingBalance << std::endl;
+			}
+			else {
+				std::cout << "Error opening account" << std::endl;
+			}
 			break;
 		}
-		case (2): //Close an account
+		case (3): //Close an account
 		{
-			int accountNo;
-			std::cout << "Input an account number" << std::endl;
-			std::cin >> accountNo;
-			if (person1.closeAccount(&accountNo))
+			int * accountNo;
+			std::string accName;
+			std::cout << "Input an accouunt name followed by account number (e.g harry 1234)" << std::endl;
+			std::cin >> accName >> *accountNo;
+			if (harryBank.closeAccount(accountNo, accName))
 			{
 				std::cout << "Successfully closed account : " << accountNo << std::endl;
 			}
 			else {
-				std::cout << "Cannot find account : " << accountNo << std::endl;
+				std::cout << "Error closing account" << std::endl;
 			}
 			break;
 		}
-		case (3): //Credit money to an account
-		{
-			int accNo;
-			double bal;
-			std::cout << "Input and account number followed by the balance to add (e.g 123 20.00)" << std::endl;
-			std::cin >> accNo >> bal;
-			if (person1.creditMoney(&accNo, &bal)) {
-				std::cout << "Successfully deposited : " << bal << " to account : " << accNo << std::endl;
-			}
-			else {
-				std::cout << "Account not found or negative quantity supplied" << std::endl;
-			}
-
-			break;
-		}
-		case (4): //Debit money from an account
-		{
-			int accNo;
-			double bal;
-			std::cout << "Input and account number followed by the balance to remove (e.g 123 20.00)" << std::endl;
-			std::cin >> accNo >> bal;
-			if (person1.debitMoney(&accNo, &bal)) {
-				std::cout << "Successfully withdrawn : " << bal << " to account : " << accNo << std::endl;
-			}
-			else {
-				std::cout << "Account not found or negative quantity supplied" << std::endl;
-			}
-			break;
-		}
-		case (5): //Print out account information for all accounts
-		{
-			person1.printAllAccounts();
-			break;
-		}
+		
 		case (-1):
 		{
 			command = -1;

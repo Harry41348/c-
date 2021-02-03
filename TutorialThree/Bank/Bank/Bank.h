@@ -5,9 +5,15 @@ class Bank
 {
 public:
 	Bank(std::string);
-	void registerPerson(std::string);
-	bool newAccount(Account&);
-
+	//Setters
+	bool registerPerson(std::string);
+	bool newCurrentAccount(std::string, int, double);
+	bool closeAccount(int*, std::string);
+	bool depositMoney();
+	bool withdrawMoney();
+	//Getters
+	double checkBalance();
+	void checkAccounts();
 private:
 	std::string name;
 	std::vector<Person> accountHolders;

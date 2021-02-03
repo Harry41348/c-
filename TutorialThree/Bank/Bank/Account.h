@@ -7,17 +7,16 @@
 class Account 
 {
 public:
-	Account(int*, double*);
-
-	bool withdraw(double*);
-	bool credit(double*);
-
-	int getAccNo();
-	double getBal();
+	Account(int, double);
+	//Setters
+	bool deposit(double);
+	bool withdraw(double);
+	//Getters
+	int getAccountNumber() const;
+	double getBalance() const;
 	std::string getDetails() const;
-	double simulateInterest(int, double);
 	static int getTotalAccounts();
-
+	//Virtual
 	virtual ~Account();
 	virtual double getBalance() = 0;
 	virtual void printDetails() = 0;

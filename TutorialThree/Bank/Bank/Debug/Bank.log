@@ -1,35 +1,44 @@
 ﻿  Account.cpp
+  Bank.cpp
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Bank.cpp(10,36): error C3867: 'Person::getName': non-standard syntax; use '&' to create a pointer to member
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Bank.cpp(10,36): error C2678: binary '==': no operator found which takes a left-hand operand of type 'overloaded-function' (or there is no acceptable conversion)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstring(4376,17): message : could be 'bool std::operator ==<char,std::char_traits<char>,std::allocator<char>>(const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &,const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &) noexcept'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Bank.cpp(10,36): message : while trying to match the argument list '(overloaded-function, std::string)'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Bank.cpp(21,29): error C3867: 'Person::getName': non-standard syntax; use '&' to create a pointer to member
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Bank.cpp(21,29): error C2678: binary '==': no operator found which takes a left-hand operand of type 'overloaded-function' (or there is no acceptable conversion)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstring(4376,17): message : could be 'bool std::operator ==<char,std::char_traits<char>,std::allocator<char>>(const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &,const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &) noexcept'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Bank.cpp(21,29): message : while trying to match the argument list '(overloaded-function, std::string)'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Bank.cpp(22,22): error C2065: 'acc': undeclared identifier
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Bank.cpp(31,29): error C3867: 'Person::getName': non-standard syntax; use '&' to create a pointer to member
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Bank.cpp(31,29): error C2678: binary '==': no operator found which takes a left-hand operand of type 'overloaded-function' (or there is no acceptable conversion)
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\include\xstring(4376,17): message : could be 'bool std::operator ==<char,std::char_traits<char>,std::allocator<char>>(const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &,const std::basic_string<char,std::char_traits<char>,std::allocator<char>> &) noexcept'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Bank.cpp(31,29): message : while trying to match the argument list '(overloaded-function, std::string)'
   Main.cpp
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,12): error C2259: 'Account': cannot instantiate abstract class
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(7): message : see declaration of 'Account'
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,12): message : due to following members:
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,12): message : 'double Account::getBalance(void)': is abstract
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(22): message : see declaration of 'Account::getBalance'
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,12): message : 'void Account::printDetails(void)': is abstract
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(23): message : see declaration of 'Account::printDetails'
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,16): error C2259: 'Account': cannot instantiate abstract class
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(7): message : see declaration of 'Account'
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,16): message : due to following members:
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,16): message : 'double Account::getBalance(void)': is abstract
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(22): message : see declaration of 'Account::getBalance'
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(42,16): message : 'void Account::printDetails(void)': is abstract
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(23): message : see declaration of 'Account::printDetails'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Main.cpp(56,7): error C2660: 'Bank::newAccount': function does not take 2 arguments
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Bank.h(10,7): message : see declaration of 'Bank::newAccount'
   CurrentAccount.cpp
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\CurrentAccount.cpp(14,55): error C3867: 'Account::getAccNo': non-standard syntax; use '&' to create a pointer to member
-  Date.cpp
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\CurrentAccount.cpp(5,23): error C2664: 'Account::Account(const Account &)': cannot convert argument 1 from 'int *' to 'int'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\CurrentAccount.cpp(5,12): message : There is no context in which this conversion is possible
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(10,2): message : see declaration of 'Account::Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\CurrentAccount.cpp(9,18): error C2039: 'getBal': is not a member of 'Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(7): message : see declaration of 'Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\CurrentAccount.cpp(9,24): error C3861: 'getBal': identifier not found
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\CurrentAccount.cpp(13,46): error C2039: 'getAccNo': is not a member of 'Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(7): message : see declaration of 'Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\CurrentAccount.cpp(13,55): error C2065: 'getAccNo': undeclared identifier
   Person.cpp
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,16): error C2259: 'Account': cannot instantiate abstract class
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(21,6): error C2039: 'getAccNo': is not a member of 'Account'
 C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(7): message : see declaration of 'Account'
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,16): message : due to following members:
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,16): message : 'double Account::getBalance(void)': is abstract
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(22): message : see declaration of 'Account::getBalance'
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,16): message : 'void Account::printDetails(void)': is abstract
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(23): message : see declaration of 'Account::printDetails'
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,28): error C2259: 'Account': cannot instantiate abstract class
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(31,6): error C2039: 'getAccNo': is not a member of 'Account'
 C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(7): message : see declaration of 'Account'
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,28): message : due to following members:
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,28): message : 'double Account::getBalance(void)': is abstract
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(22): message : see declaration of 'Account::getBalance'
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(50,28): message : 'void Account::printDetails(void)': is abstract
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(23): message : see declaration of 'Account::printDetails'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(32,32): error C2039: 'credit': is not a member of 'Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(7): message : see declaration of 'Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(40,6): error C2039: 'getAccNo': is not a member of 'Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(7): message : see declaration of 'Account'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(41,41): error C2664: 'bool Account::withdraw(double)': cannot convert argument 1 from 'double *' to 'double'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(41,35): message : There is no context in which this conversion is possible
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Account.h(13,7): message : see declaration of 'Account::withdraw'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(48,31): error C2511: 'std::string Person::getName(void)': overloaded member function not found in 'Person'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.h(9): message : see declaration of 'Person'
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialThree\Bank\Bank\Person.cpp(49,9): error C2671: 'Person::getName': static member functions do not have 'this' pointers
   Generating Code...
