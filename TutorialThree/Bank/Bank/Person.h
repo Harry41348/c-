@@ -16,10 +16,11 @@ public:
 	bool depositMoney(int, double);
 	bool withdrawMoney(int, double);
 	//Getters
-	void printAllAccounts();
 	std::string getName() const;
+	double checkBalance(int);
+	void printAllAccounts();
 
-	bool unableToLocateAccount(int);
+	void unableToLocateAccount(int);
 	virtual ~Person();
 private:
 	const std::string name;

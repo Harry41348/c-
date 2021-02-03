@@ -22,7 +22,7 @@ bool Person::addCurrentAccount(int accountNumber, double balance) {
 		}
 	}
 	this->accounts.push_back(new CurrentAccount(accountNumber, balance));
-	std::cout << "Account created succesfully. Your account number is " << accountNumber << " with a balance of " << balance << ".\n";
+	std::cout << "Account created succesfully, with the account number of " << accountNumber << " and a balance of £" << balance << ".\n";
 	return true;
 }
 
@@ -35,7 +35,8 @@ bool Person::closeAccount(int accountNumber) {
 			return true;
 		}
 	}
-	return unableToLocateAccount(accountNumber);
+	unableToLocateAccount(accountNumber);
+	return false;
 }
 
 bool Person::depositMoney(int accountNumber, double amount) {
@@ -44,7 +45,8 @@ bool Person::depositMoney(int accountNumber, double amount) {
 			return (*it)->deposit(amount);
 		}
 	}
-	return unableToLocateAccount(accountNumber);
+	unableToLocateAccount(accountNumber);
+	return false;
 }
 
 bool Person::withdrawMoney(int accountNumber, double amount) {
@@ -53,12 +55,23 @@ bool Person::withdrawMoney(int accountNumber, double amount) {
 			return (*it)->withdraw(amount);
 		}
 	}
-	return unableToLocateAccount(accountNumber);
+	unableToLocateAccount(accountNumber);
+	return false;
 }
 
 //Getters
 std::string Person::getName() const {
 	return this->name;
+}
+
+double Person::checkBalance(int accountNumber) {
+	for (std::vector<Account*>::iterator it = this->accounts.begin(); it != this->accounts.end(); ++it) {
+		if ((*it)->getAccountNumber == accountNumber) {
+			return (*it)->getBalance();
+		}
+	}
+	unableToLocateAccount(accountNumber);
+	return 0;
 }
 
 void Person::printAllAccounts() {
@@ -72,9 +85,8 @@ void Person::printAllAccounts() {
 }
 
 //Functions
-bool Person::unableToLocateAccount(int accountNumber) {
+void Person::unableToLocateAccount(int accountNumber) {
 	std::cout << "Unable to locate the account " << accountNumber << ".\n";
-	return false;
 }
 
 //Deconstructor
