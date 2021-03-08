@@ -1,0 +1,46 @@
+﻿  Person.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xmemory(700): error C2259: 'Account': cannot instantiate abstract class
+C:\A - Job Working Directory\AA - Teaching and Research - WFH 2020\Teaching\OOSD\My Codes\Tut6Quest2\Account.h(17): message : see declaration of 'Account'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xmemory(700): message : due to following members:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xmemory(700): message : 'std::string Account::printDetails(void) const': is abstract
+C:\A - Job Working Directory\AA - Teaching and Research - WFH 2020\Teaching\OOSD\My Codes\Tut6Quest2\Account.h(34): message : see declaration of 'Account::printDetails'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\vector(682): message : see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const _Ty&>(_Alloc &,_Objty *const ,const _Ty &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<Account>,
+              _Ty=Account,
+              _Objty=Account
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\vector(687): message : see reference to function template instantiation 'void std::_Default_allocator_traits<_Alloc>::construct<_Ty,const _Ty&>(_Alloc &,_Objty *const ,const _Ty &)' being compiled
+          with
+          [
+              _Alloc=std::allocator<Account>,
+              _Ty=Account,
+              _Objty=Account
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\vector(700): message : see reference to function template instantiation 'void std::vector<Account,std::allocator<Account>>::_Emplace_back_with_unused_capacity<const _Ty&>(const _Ty &)' being compiled
+          with
+          [
+              _Ty=Account
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\vector(717): message : see reference to function template instantiation 'void std::vector<Account,std::allocator<Account>>::emplace_back<const _Ty&>(const _Ty &)' being compiled
+          with
+          [
+              _Ty=Account
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\vector(716): message : while compiling class template member function 'void std::vector<Account,std::allocator<Account>>::push_back(const _Ty &)'
+          with
+          [
+              _Ty=Account
+          ]
+C:\A - Job Working Directory\AA - Teaching and Research - WFH 2020\Teaching\OOSD\My Codes\Tut6Quest2\Person.cpp(29): message : see reference to function template instantiation 'void std::vector<Account,std::allocator<Account>>::push_back(const _Ty &)' being compiled
+          with
+          [
+              _Ty=Account
+          ]
+C:\A - Job Working Directory\AA - Teaching and Research - WFH 2020\Teaching\OOSD\My Codes\Tut6Quest2\Person.h(31): message : see reference to class template instantiation 'std::vector<Account,std::allocator<Account>>' being compiled
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xmemory(701,82): error C2259: 'Account': cannot instantiate abstract class
+C:\A - Job Working Directory\AA - Teaching and Research - WFH 2020\Teaching\OOSD\My Codes\Tut6Quest2\Account.h(17): message : see declaration of 'Account'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xmemory(701,82): message : due to following members:
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include\xmemory(701,82): message : 'std::string Account::printDetails(void) const': is abstract
+C:\A - Job Working Directory\AA - Teaching and Research - WFH 2020\Teaching\OOSD\My Codes\Tut6Quest2\Account.h(34): message : see declaration of 'Account::printDetails'
