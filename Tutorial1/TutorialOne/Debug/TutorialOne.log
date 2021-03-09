@@ -1,4 +1,4 @@
 ﻿  TutorialOne.cpp
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialOne\TutorialOne\TutorialOne.cpp(123,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialOne\TutorialOne\TutorialOne.cpp(130,19): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-  TutorialOne.vcxproj -> C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\TutorialOne\Debug\TutorialOne.exe
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\Tutorial1\TutorialOne\TutorialOne.cpp(123,31): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\Tutorial1\TutorialOne\TutorialOne.cpp(130,19): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+  TutorialOne.vcxproj -> C:\Users\hvale\OneDrive - University of Huddersfield\Year 2\Object Oriented Systems Development\cplusplus\Tutorial1\Debug\TutorialOne.exe

@@ -51,7 +51,7 @@ void task3() {
         std::cout << "What number do you want to add to the total? (type -1 to stop) ";
         std::cin >> num;
     }
-    std::cout << "Total: " << checkout;
+    std::cout << "Total: " << checkout << std::endl;
 }
 
 void task4() {
@@ -143,33 +143,35 @@ void task6(){
 
 int main()
 {
-    int program;
-    std::cout << "Which program to run? ";
-    std::cin >> program;
-    switch (program) {
-    case 1: 
-        practice();
-        break;
-    case 2:
-        task1();
-        break;
-    case 3:
-        task2();
-        break;
-    case 4:
-        task3();
-        break;
-    case 5:
-        task4();
-        break;
-    case 6:
-        task5();
-        break;
-    case 7:
-        task6();
-        break;
-    default:
-        std::cout << "Must be a number from the following: 1, 2";
+    int input = 0;
+    while (input != -1) {
+        std::cout << "Which program to run? -1 to exit ";
+        std::cin >> input;
+        switch (input) {
+        case 0:
+            practice();
+            break;
+        case 1:
+            task1();
+            break;
+        case 2:
+            task2();
+            break;
+        case 3:
+            task3();
+            break;
+        case 4:
+            task4();
+            break;
+        case 5:
+            task5();
+            break;
+        case 6:
+            task6();
+            break;
+        default:
+            std::cout << "Must be a number from the following: 0, 1, 2, 3, 4, 5, 6";
+        }
     }
 
 }
