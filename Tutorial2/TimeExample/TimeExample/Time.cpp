@@ -1,8 +1,6 @@
 #include "pch.h"
 #include "Time.h"
 
-using namespace std;
-
 Time::Time()
 {
 	hour = minute = second = 0;
@@ -25,7 +23,7 @@ void Time::setTime(int h, int m, int s)
 //print time in 24 hour format (HH:MM:SS)
 void Time::printTime()
 {
-	cout << setfill('0') << setw(2) << hour << ":" << setw(2) << minute << ":" << setw(2) << second;
+	std::cout << std::setfill('0') << std::setw(2) << hour << ":" << std::setw(2) << minute << ":" << std::setw(2) << second;
 }
 
 void Time::tckTime() 

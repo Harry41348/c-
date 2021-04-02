@@ -12,7 +12,7 @@ int main()
 	Time t;	//new time object
 	cout << "\nThe initial time is ";
 	t.printTime();
-	t.setTime(13, 59, 52); //set the time
+	t.setTime(23, 59, 52); //set the time
 	cout << "\nThe set time is ";
 	t.printTime();
 	for (int i = 0; i < 10; i++) {
